@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: dao
+  datasource:
+    driver-class-name: com.mysql.fabric.jdbc.FabricMySQLDriver
+    url: jdbc:mysql://localhost:3306/south
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+    healthcheck: true
